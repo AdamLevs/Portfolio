@@ -1,71 +1,75 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-} from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
-} from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { DiDocker, DiGit, DiPython } from "react-icons/di";
+import { SiTerraform, SiKubernetes, SiJenkins, SiPrometheus, SiGrafana, SiAnsible, SiHelm, SiNginx, SiGithubactions, SiGnubash, SiPycharm, SiPostgresql, SiRedhatopenshift, SiPodman, SiApachekafka } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
+import { TbBrandCSharp } from "react-icons/tb";
 
-function Techstack() {
+function DevOpsTechstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <SiTerraform />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <SiKubernetes />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <DiDocker />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <FaAws />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+        <SiJenkins />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <SiPrometheus />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
+        <SiGrafana />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAnsible />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiHelm />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNginx />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGithubactions />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGnubash />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <TbBrandCSharp />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPycharm />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPostgresql />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiRedhatopenshift />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPodman />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiApachekafka />
       </Col>
     </Row>
   );
 }
 
-export default Techstack;
+export default DevOpsTechstack;
