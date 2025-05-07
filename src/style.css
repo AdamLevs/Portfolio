@@ -744,3 +744,217 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+/* Certificate Carousel Styling - Clean, minimal version */
+.cert-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.cert-heading {
+  color: white;
+  font-size: 1.8em;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.cert-carousel {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  perspective: 1200px;
+  z-index: 1;
+}
+
+.cert-slider {
+  margin: 0 auto;
+}
+
+.cert-item {
+  padding: 5px;
+  text-align: center;
+  transform-style: preserve-3d;
+}
+
+.cert-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  max-height: 200px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.cert-image:hover {
+  transform: scale(1.08);
+}
+
+/* Direction-based transitions */
+.next-direction .slick-slide:not(.slick-active) {
+  transform: rotateY(60deg) translateX(50px);
+  transform-origin: center left;
+  opacity: 0;
+}
+
+.prev-direction .slick-slide:not(.slick-active) {
+  transform: rotateY(-60deg) translateX(-50px);
+  transform-origin: center right;
+  opacity: 0;
+}
+
+/* Slide transition animation */
+.slick-slide {
+  transform: rotateY(60deg) translateX(80px);
+  transform-origin: center left;
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.slick-slide.slick-active {
+  transform: rotateY(0deg) translateX(0);
+  opacity: 1;
+  z-index: 5;
+}
+
+/* Next certificate preview */
+.cert-preview-container {
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.cert-preview-next {
+  width: 100px;
+  opacity: 0.4;
+  transform: scale(0.7) rotateY(30deg);
+  transform-origin: center left;
+  transition: all 0.3s ease;
+}
+
+.cert-preview-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+/* Hover on carousel container shows preview more clearly */
+.cert-container:hover .cert-preview-next {
+  opacity: 0.7;
+  transform: scale(0.8) rotateY(20deg);
+}
+
+/* Full-size certificate popup styles */
+.cert-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s forwards;
+}
+
+.cert-popup-container {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.cert-popup-image {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 0;
+  background: transparent;
+}
+
+.cert-popup-close {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  background: rgba(20, 20, 30, 0.7);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.cert-popup-close:hover {
+  background: rgba(199, 112, 240, 0.7);
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  70% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .cert-container {
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .cert-heading {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+  }
+
+  .cert-image {
+    max-height: 180px;
+  }
+
+  .cert-preview-container {
+    display: none; /* Hide preview on mobile/tablet */
+  }
+
+  .cert-popup-close {
+    top: -30px;
+    right: -10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cert-container {
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .cert-carousel {
+    max-width: 280px;
+  }
+}
