@@ -39,22 +39,10 @@ function DevOpsTechstack() {
         <SiHelm />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNginx />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiGithubactions />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <SiGnubash />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbBrandCSharp />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPycharm />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
@@ -64,9 +52,6 @@ function DevOpsTechstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPodman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiApachekafka />
       </Col>
     </Row>
   );
