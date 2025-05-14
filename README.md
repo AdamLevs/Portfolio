@@ -2,7 +2,6 @@
   Portfolio Website - v1.2<br/>
 </h2>
 
-## Built With
 Made by: <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> ,which features some of my github projects as well as my resume and technical skills.<br/>
 This project was built using these technologies.
 - React.js
