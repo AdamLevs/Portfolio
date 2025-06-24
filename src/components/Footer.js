@@ -1,24 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
-  const [status, setStatus] = useState("Checking...");
 
   useEffect(() => {
-    fetch("https://status.adamlevs.com/api/status")
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.status === "up") {
-          setStatus("✅ All Systems Operational");
-        } else {
-          setStatus("🔴 Some Systems Down");
-        }
-      })
-      .catch(() => {
-        setStatus("⚠️ Status Unavailable");
-      });
+    fetch("https://status.adamlevs.com/api/status");
   }, []);
 
   return (
@@ -46,7 +34,7 @@ function Footer() {
             rel="noopener noreferrer"
             style={{ color: "white", textDecoration: "none" }}
           >
-            {status}
+            Servers Status
           </a>
         </Col>
       </Row>
