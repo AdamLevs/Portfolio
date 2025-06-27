@@ -71,7 +71,7 @@ function ResumeNew() {
                 pageNumber={1}
                 scale={scale}
                 renderTextLayer={false}
-                renderAnnotationLayer={false}
+                renderAnnotationLayer={true}
               />
             </Document>
           </div>
