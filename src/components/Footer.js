@@ -1,13 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
-
-  useEffect(() => {
-    fetch("https://status.adamlevs.com/api/status");
-  }, []);
 
   return (
     <Container fluid className="footer">

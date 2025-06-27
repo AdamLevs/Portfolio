@@ -14,7 +14,7 @@ function AboutCard() {
             <br />
             I'm currently working as a NOC operator at{" "}
             <a
-              href="https://service.we-com.co.il/he/information/about?_gl=1*1bjgv3v*_gcl_aw*R0NMLjE3NDAwNzQ4NDcuRUFJYUlRb2JDaE1Jclk2YzktdlNpd01WdDF0QkFoMEROUmxNRUFBWUFTQUFFZ0w0TVBEX0J3RQ..*_gcl_au*NDM3MjEyNzYzLjE3NDAwNzQ4NDc.*_ga*Nzg2OTcyMDUuMTc0MDA3NDg0Nw..*_ga_BFLMXPCMWK*MTc0MDA3NDg0Ny4xLjAuMTc0MDA3NDg0Ny42MC4wLjA."
+              href="https://we-com.co.il/%d7%90%d7%95%d7%93%d7%95%d7%aa/"
               target="_blank"
               rel="noopener noreferrer"
               className="purple"
