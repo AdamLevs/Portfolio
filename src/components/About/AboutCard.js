@@ -8,22 +8,25 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
+          <p style={{ textAlign: "justify", whiteSpace: "pre-line" }}>
             Hi everyone, I'm <span className="purple">Adam Lev</span> from{" "}
             <span className="purple">Israel</span>.
-            <br />
-            I'm currently working as a NOC operator at{" "}
+            {"\n"}
+            I'm currently working as a Software Engineer at{" "}
             <a
-              href="https://we-com.co.il/%d7%90%d7%95%d7%93%d7%95%d7%aa/"
+              href="https://markito.tv"
               target="_blank"
               rel="noopener noreferrer"
               className="purple"
             >
-              We-com
+              Markito
             </a>
-            .
-            <br />
-            I'm currently preparing for the{" "}
+            ,
+            {"\n"}
+            using multiple code languages like:{" "}
+            <span className="purple">Python, GO, JavaScript.</span>
+            {"\n"}
+            Currently preparing for the{" "}
             <span className="purple">
               AWS Certified DevOps Engineer – Professional
             </span>{" "}
@@ -33,21 +36,19 @@ function AboutCard() {
             </span>{" "}
             certifications, while continuously building hands-on skills in
             DevOps and cloud technologies.
-            <br />
-            I’ve also recently started a{" "}
-             Bachelor’s degree in
-            <span className="purple"> Computer Science</span> at the{" "}
+            {"\n"}
+            I’ve also recently started a Bachelor’s degree in{" "}
+            <span className="purple">Computer Science</span> at the{" "}
             Open University of Israel.
-            <br />
-            <br />
+            {"\n\n"}
             Apart from coding, here are some activities that I love to do:
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Motorcycle riding
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Financial Blogs
+              <ImPointRight /> Working out
             </li>
             <li className="about-activity">
               <ImPointRight /> MMA Fighting

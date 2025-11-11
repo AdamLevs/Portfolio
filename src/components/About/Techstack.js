@@ -1,9 +1,21 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { DiDocker, DiGit, DiPython } from "react-icons/di";
-import { SiTerraform, SiKubernetes, SiJenkins, SiPrometheus, SiGrafana, SiAnsible, SiHelm, SiNginx, SiGithubactions, SiGnubash, SiPycharm, SiPostgresql, SiRedhatopenshift, SiPodman, SiApachekafka } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
-import { TbBrandCSharp } from "react-icons/tb";
+import { DiDocker, DiGit, DiPython, DiGo, DiJavascript1 } from "react-icons/di";
+import {
+  SiTerraform,
+  SiKubernetes,
+  SiJenkins,
+  SiPrometheus,
+  SiGrafana,
+  SiAnsible,
+  SiHelm,
+  SiGnubash,
+  SiPostgresql,
+  SiRedhatopenshift,
+  SiPodman,
+  SiContabo,
+} from "react-icons/si";
+import { FaAws, FaMicrosoft, FaShieldAlt } from "react-icons/fa";
 
 function DevOpsTechstack() {
   return (
@@ -19,6 +31,15 @@ function DevOpsTechstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <FaAws />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaMicrosoft /> {/* Azure */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiContabo /> {/* Contabo */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaShieldAlt /> {/* Security / MITM */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
@@ -43,6 +64,12 @@ function DevOpsTechstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiGo />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />

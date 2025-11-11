@@ -15,18 +15,20 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Junior <b className="purple">DevOps</b> Engineer and <b className="purple">Full Stack Developer.</b>
+              Junior <b className="purple">DevOps</b> Engineer and <b className="purple">Software </b> Engineer.
               <br />
               <br />Specialized in
               <i>
-                <b className="purple"> AWS, Kubernetes, Terraform, and CI/CD.</b>
+                <b className="purple"> AWS, Kubernetes, Terraform, and CI/CD</b>.
               </i>
               <br />
-              <br />I build scalable, secure, cloud-native infrastructures with <b className="purple">IaC</b>.
+              <br />And work with multiple programming languages including <b className="purple">Python, Go, and JavaScript</b>.
+              <br />
+              <br />I build scalable, secure, cloud-native infrastructures with <b className="purple">IaC</b>,
               <br />
               <br />Automating workflows with
               <i>
-                <b className="purple"> GitOps, Helm, Docker, and Ansible.</b>
+                <b className="purple"> GitOps, Helm, Docker, and Ansible</b>.
               </i>
               <br />
               <br />Bridging development and operations for efficiency and reliability.
