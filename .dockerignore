@@ -1,7 +1,13 @@
 node_modules
 build
 .git
+.gitignore
 *.log
 .DS_Store
+README.md
 tests/
 Dockerfile
+.dockerignore
+*.md
+.cursor
+agent-transcripts
